@@ -1,0 +1,10 @@
+#behat.yml
+
+default:
+    extensions:
+        SensioLabs\Behat\PageObjectExtension: ~
+        Behat\MinkExtension:
+            base_url: https://www.guerrillamail.com/
+            selenium2:
+                wd_host: http://127.0.0.1:4444/wd/hub
+                capabilities: { "browser": "chrome", "version": "", 'chrome': {'switches':['--start-maximized']}} 

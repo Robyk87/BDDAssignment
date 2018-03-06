@@ -1,0 +1,17 @@
+#behat.yml
+
+default:
+    extensions:
+        SensioLabs\Behat\PageObjectExtension: ~
+        Behat\MinkExtension:
+          base_url:
+          javascript_session: selenium2
+
+          browser_name: chrome
+          selenium2:
+              capabilities:
+                # required by mink-extension 2.3
+                  marionette: null
+                  browserName: chrome
+                  browser: chrome
+                  version:
