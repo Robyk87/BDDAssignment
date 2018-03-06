@@ -20,6 +20,7 @@ class ChangeYourPasswordPage extends BasePage
     {
         // Focus on current tab.
         $this->focusWindow($driver);
+
         //Explicit wait for page to load.
         $driver->wait()->until(WebDriverExpectedCondition::titleIs('Change Your Password | Salesforce'));
 
